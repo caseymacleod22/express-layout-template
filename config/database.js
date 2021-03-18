@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
+// 🚨 Don't forget to add your username and password to your connection URI
 
-const connectionURI = 'mongodb+srv://admin:pepper22@cluster0.oc1n0.mongodb.net/expresstagram?retryWrites=true&w=majority'
+const dbName = 'expresstagram'
+
+const connectionURI = `mongodb+srv://admin:pepper22@cluster0.esjr1.mongodb.net/${dbName}?retryWrites=true&w=majority`
 
 // shortcut to mongoose.connection object
 const db = mongoose.connection;

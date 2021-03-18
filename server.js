@@ -20,6 +20,8 @@ app.use(express.urlencoded({ extended: false }));
 
 // Mount routes with app.use()
 app.use('/', indexRouter)
+
+
 // Tell App to listen
 app.listen(port, function() {
     console.log(`Express is listening on port:${port}`);
